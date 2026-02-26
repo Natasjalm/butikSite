@@ -2,49 +2,82 @@ img {
   width: 100%;
 }
 body {
-  background-color: #181818;
-}
-.kategorier-cards {
-  background-color: #d8dadb;
-  box-shadow: 6px 8px 8px rgb(80, 93, 100);
-  border-radius: 20px;
-  max-width: 500px;
-  text-align: center;
-  margin: 40px;
-  padding: 40px;
+  margin: 0;
+  background-color: #000000;
+  color: #f2f2f2;
 }
 
+/*** Fonts ***/
 h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  color: #f2f2f2;
   text-align: center;
-  color: aliceblue;
 }
-
-p {
-  color: aliceblue;
-  font-size: 1rem;
-}
-
 h2 {
-  color: aliceblue;
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  color: #f2f2f2;
+  text-align: center;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+}
+.lille-h1 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+}
+
+.kategorier-cards {
+  background: #1c1c1c;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  margin: 30px;
+  padding: 40px;
+  text-align: center;
+}
+/*** Hover effekter ***/
+.kategorier-cards:hover {
+  transform: translateY(-8px);
+  background: #252525;
+  box-shadow: 0 15px 40px rgba(232, 160, 191, 0.3);
+  color: #e8a0bf;
+}
+.card:hover {
+  transform: translateY(-8px);
+  background: #000000;
+  box-shadow: 20px 20px 80px rgba(228, 141, 178, 0.3);
+  color: #e8a0bf;
 }
 .cta {
-  font-size: 1rem;
-  color: aliceblue;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
   text-decoration: underline;
 }
+
 a {
-  text-decoration: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 4px;
   font-size: 3rem;
-  color: black;
-}
-.h1-start {
-  border-bottom: solid;
-  border-width: 2px;
+  text-transform: uppercase;
+  color: #e8a0bf;
+  text-decoration: none;
 }
 
+/*** Logo ***/
 .logo {
   max-width: 200px;
   margin: 10px;
@@ -57,7 +90,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #363636;
+  background-color: #000000;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 768px) {
@@ -68,4 +101,36 @@ header {
     max-width: 400px;
     margin: 20px;
   }
+}
+
+/*** Hero section ***/
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-subtitle {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #e8a0bf;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  color: #f2f2f2;
 }
