@@ -2,6 +2,14 @@
   .page {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    margin: 300px;
+    gap: 40px;
+  }
+  .card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 7;
+    padding: 30px;
   }
 }
