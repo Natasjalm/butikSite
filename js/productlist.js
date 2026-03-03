@@ -1,4 +1,7 @@
-const listURL = "https://kea-alt-del.dk/t7/api/products?limit=50";
+const params = new URLSearchParams(window.location.search);
+const myCategory = params.get("category");
+
+const listURL = myCategory ? `https://kea-alt-del.dk/t7/api/products?category=${encodeURIComponent(myCategory)}&limit=28` : "https://kea-alt-del.dk/t7/api/products?limit=100";
 const listContainer = document.querySelector(".page");
 
 function getProducts() {
@@ -19,7 +22,7 @@ function showProducts(products) {
                 <p> Brand:  ${product.brandname}</p>
                 <p class="hide"> ${product.discount}% </p>
                  <p class="hide"> ${product.soldout} </p>
-                <a class="cta" href="product.html">See details</a>
+                <a class="cta" href="product.html?id=${product.id}">See details</a>
             </article>
     `;
   });
