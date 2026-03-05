@@ -60,10 +60,17 @@ p {
   color: #e8a0bf;
 }
 .cta {
-  font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
-  letter-spacing: 3px;
-  text-decoration: underline;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #e8a0bf;
+  background-color: transparent;
+  border: 2px solid #e8a0bf;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 a {
@@ -88,8 +95,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #000000;
+  background-color: #ffffff99;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sort {
+  background-color: #00000099;
 }
 @media (min-width: 768px) {
   h1 {
@@ -103,8 +114,8 @@ header {
 
 /*** Hero section ***/
 .hero {
-  height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6));
+  height: 60vh;
+  background: linear-gradient(#ffffff99, #00000099);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,4 +142,46 @@ header {
   font-weight: 600;
   margin: 0 0 30px 0;
   color: #f2f2f2;
+}
+
+/* BTN */
+.sort-btn {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #e8a0bf;
+  background-color: transparent;
+  border: 2px solid #e8a0bf;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: #ff1500;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.basket-btn {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #e8a0bf;
+  background-color: transparent;
+  border: 2px solid #e8a0bf;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
