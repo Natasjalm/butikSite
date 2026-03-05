@@ -24,7 +24,7 @@ function show(data) {
                 <p>${data.usagetype}</p>
                 <h3>Price</h3>
                 <p>${data.price}</p>
-                <button>Add to basket</button>
+                <button class= "basket-btn">Add to basket</button>
 
             </div>
     
